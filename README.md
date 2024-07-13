@@ -1,4 +1,4 @@
-# end-to-end-diabetes-machine-learning-pipeline-1
+# end-to-end-diabetes-machine-learning-pipeline
 Diabetes - End to End Machine Learning Pipeline. 
 - EDA,
 - Data Preproccessing &amp;
