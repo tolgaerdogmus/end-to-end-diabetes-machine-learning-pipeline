@@ -189,15 +189,25 @@ def voting_classifier(best_models, X, y):
 ###################################################
 # Pipeline Main Function
 ###################################################
-
+# From Command Line
+# python diabetes_pipeline.py
 def main():
     df = pd.read_csv("datasets/diabetes.csv")
     X, y = diabetes_data_prep(df)
     base_models(X, y)
     best_models = hyperparameter_optimization(X, y)
     voting_clf = voting_classifier(best_models, X, y)
-    joblib.dump(voting_clf, 'voting_clf.pkl')
+    joblib.dump(voting_clf, 'models/voting_clf.pkl')
     return voting_clf
 
 if __name__ == "__main__":
+    print("Program Started")
     main()
+
+# git github
+# makefile code automation tool
+# veri tabanlarından
+# log
+# class
+# docker
+# requirements.txt
