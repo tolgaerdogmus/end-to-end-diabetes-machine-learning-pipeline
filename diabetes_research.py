@@ -409,9 +409,9 @@ X.columns
 random_user = X.sample(1, random_state=45)
 voting_clf.predict(random_user)
 
-joblib.dump(voting_clf, "voting_clf2.pkl")
+joblib.dump(voting_clf, "models/voting_clf2.pkl")
 
-new_model = joblib.load("voting_clf2.pkl")
+new_model = joblib.load("models/voting_clf2.pkl")
 new_model.predict(random_user)
 
 
